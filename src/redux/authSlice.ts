@@ -24,13 +24,12 @@ export const login = createAsyncThunk(
 		try {
 			const response = await axiosAuth({
 				method: 'post',
-				url: '/auth/login',
+				url: '/login',
 				data: {
 					email,
 					password,
 				},
 			});
-			console.log(response);
 
 			if (response.data.success && response.data.message.role === 'instructor')
 				return response.data;
