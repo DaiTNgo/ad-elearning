@@ -24,7 +24,7 @@ export const login = createAsyncThunk(
 		try {
 			const response = await axiosAuth({
 				method: 'post',
-				url: '/login',
+				url: '/auth/login',
 				data: {
 					email,
 					password,
