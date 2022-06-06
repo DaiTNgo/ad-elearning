@@ -1,12 +1,11 @@
 import axios from 'axios';
-const BASE_URL = 'http://localhost:5000';
+const BASE_URL = 'https://apintd-elearning.herokuapp.com';
 
 export const axiosAuth = axios.create({
 	baseURL: `${BASE_URL}/auth`,
 	headers: {
 		'Content-Type': 'application/json',
 	},
-	withCredentials: true,
 });
 
 export const axiosUser = axios.create({
@@ -14,7 +13,6 @@ export const axiosUser = axios.create({
 	headers: {
 		'Content-Type': 'application/json',
 	},
-	withCredentials: true,
 });
 
 export const axiosInstructor = axios.create({
@@ -22,7 +20,6 @@ export const axiosInstructor = axios.create({
 	headers: {
 		'Content-Type': 'application/json',
 	},
-	withCredentials: true,
 });
 
 export const axiosCourse = axios.create({
@@ -30,5 +27,4 @@ export const axiosCourse = axios.create({
 	headers: {
 		'Content-Type': 'application/json',
 	},
-	withCredentials: true,
 });

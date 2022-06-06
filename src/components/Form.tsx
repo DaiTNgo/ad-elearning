@@ -40,8 +40,8 @@ function Form({ handleEditTopic }: any) {
 					}}>
 					<TableHead>
 						<TableRow>
-							<TableCell width={60}>Order</TableCell>
-							<TableCell width={60}>Name</TableCell>
+							<TableCell width={40}>Order</TableCell>
+							<TableCell width={80}>Name</TableCell>
 							<TableCell>Description</TableCell>
 							<TableCell>Link</TableCell>
 							<TableCell></TableCell>
