@@ -3,9 +3,9 @@ const BASE_URL = 'https://apintd-elearning.herokuapp.com';
 
 export const axiosAuth = axios.create({
 	baseURL: `${BASE_URL}/auth`,
-	// headers: {
-	// 	'Content-Type': 'application/json',
-	// },
+	headers: {
+		'Content-Type': 'application/json',
+	},
 });
 
 export const axiosUser = axios.create({

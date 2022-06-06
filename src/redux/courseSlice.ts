@@ -41,7 +41,7 @@ export const createOrUpdateCourse = createAsyncThunk(
 					url: `/update-course/${courseId}`,
 					data: info,
 					headers: {
-						authorization: `Bearer ${accessToken}`,
+						Authorization: `Bearer ${accessToken}`,
 					},
 				});
 			} else {
@@ -50,7 +50,7 @@ export const createOrUpdateCourse = createAsyncThunk(
 					url: `/create-course`,
 					data: info,
 					headers: {
-						authorization: `Bearer ${accessToken}`,
+						Authorization: `Bearer ${accessToken}`,
 					},
 				});
 			}

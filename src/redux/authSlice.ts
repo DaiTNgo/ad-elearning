@@ -30,6 +30,7 @@ export const login = createAsyncThunk(
 					password,
 				},
 			});
+			console.log(response);
 
 			if (response.data.success && response.data.message.role === 'instructor')
 				return response.data;
@@ -49,7 +50,7 @@ export const logout = createAsyncThunk(
 				method: 'post',
 				url: '/logout',
 				headers: {
-					authorization: `Bearer ${accessToken}`,
+					Authorization: `Bearer ${accessToken}`,
 				},
 			});
 		} catch (error: any) {
@@ -79,7 +80,7 @@ export const updateUser = createAsyncThunk(
 				method: 'put',
 				url: '/update',
 				headers: {
-					authorization: `Bearer ${accessToken}`,
+					Authorization: `Bearer ${accessToken}`,
 				},
 				data: data,
 			});

@@ -20,7 +20,7 @@ function DashBoard() {
 					method: 'get',
 					url: `/instructor/${currentUser?.id}`,
 					headers: {
-						authorization: `Bearer ${accessToken} `,
+						Authorization: `Bearer ${accessToken} `,
 					},
 				});
 				if (!here) return;
@@ -41,7 +41,7 @@ function DashBoard() {
 				method: 'delete',
 				url: `/delete-course/${courseId}`,
 				headers: {
-					authorization: `Bearer ${accessToken}`,
+					Authorization: `Bearer ${accessToken}`,
 				},
 			});
 			const newCourses = [...courses].filter(

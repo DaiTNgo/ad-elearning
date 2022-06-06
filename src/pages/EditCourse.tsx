@@ -29,7 +29,7 @@ function EditCourse() {
 					method: 'get',
 					url: `/${courseId}`,
 					headers: {
-						authorization: `Bearer ${accessToken}`,
+						Authorization: `Bearer ${accessToken}`,
 					},
 				});
 				const {
