@@ -24,7 +24,6 @@ function DashBoard() {
 					},
 				});
 				if (!here) return;
-				console.log(resp);
 				setCourses(resp.data.message);
 			} catch (error: any) {
 				console.log(error);
